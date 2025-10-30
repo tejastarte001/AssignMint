@@ -47,7 +47,28 @@ export default function Home() {
               <div>
                 <h3 className="text-3xl font-bold font-headline text-foreground">Effortless for Teachers, Empowering for Students</h3>
                 <p className="mt-4 text-muted-foreground">
-                  From creation to submission, AssignMint simplifies every step of the assignment process.
+                  From creation to submission, AssignMint simplifies every step of the assignment process. Our platform provides powerful tools for assignment creation, distribution, and grading.
+                </p>
+                <div className="mt-8 grid sm:grid-cols-2 gap-4">
+                  <Card className="text-left">
+                    <CardHeader>
+                      <CheckCircle className="h-8 w-8 text-primary mb-2" />
+                      <CardTitle>Easy Assignment Creation</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Create assignments with rich text formatting, file attachments, and customizable deadlines.
+                    </CardContent>
+                  </Card>
+                  <Card className="text-left">
+                    <CardHeader>
+                      <Share2 className="h-8 w-8 text-primary mb-2" />
+                      <CardTitle>Instant Distribution</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      Share assignments with your entire class or specific students with just one click.
+                    </CardContent>
+                  </Card>
+                </div>
                 </p>
                 <ul className="mt-6 space-y-4">
                   <li className="flex items-start gap-3">
@@ -121,6 +142,74 @@ export default function Home() {
             <Card className="text-center">
               <CardHeader>
                  <div className="mx-auto bg-accent/20 text-accent rounded-full h-12 w-12 flex items-center justify-center">
+                  <CheckCircle className="h-6 w-6" />
+                </div>
+                <CardTitle className="font-headline pt-4">Progress Tracking</CardTitle>
+              </CardHeader>
+              <CardContent className="text-muted-foreground text-sm">
+                Monitor assignment completion and student progress in real-time.
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <section className="bg-secondary/30 py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center">
+              <h3 className="text-3xl font-bold font-headline text-foreground mb-6">
+                Ready to Transform Your Teaching Experience?
+              </h3>
+              <p className="text-lg text-muted-foreground mb-8">
+                Join thousands of educators who are already using AssignMint to streamline their classroom workflow.
+              </p>
+              <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Link href="/signup">Get Started Now</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <h4 className="font-semibold mb-4">Product</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/features">Features</Link></li>
+                <li><Link href="/pricing">Pricing</Link></li>
+                <li><Link href="/about">About</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Resources</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/docs">Documentation</Link></li>
+                <li><Link href="/guides">Guides</Link></li>
+                <li><Link href="/support">Support</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/privacy">Privacy Policy</Link></li>
+                <li><Link href="/terms">Terms of Service</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Connect</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/contact">Contact</Link></li>
+                <li><Link href="https://twitter.com/assignmint">Twitter</Link></li>
+                <li><Link href="https://linkedin.com/company/assignmint">LinkedIn</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+            <p>© {new Date().getFullYear()} AssignMint. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
                   <CheckCircle className="h-6 w-6" />
                 </div>
                 <CardTitle className="font-headline pt-4">Easy Tracking</CardTitle>
